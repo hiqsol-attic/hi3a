@@ -100,10 +100,13 @@ return [
     'modules' => [
         'oauth2' => [
             'class' => 'filsh\yii2\oauth2server\Module',
+/*
             'options' => [
                 'enforce_state'     => false,
                 'access_lifetime'   => 3600 * 24,
             ],
+*/
+            'tokenAccessLifetime' => 3600 * 24,
             'storageMap' => [
                 'user_credentials'  => 'common\models\User',
             ],
