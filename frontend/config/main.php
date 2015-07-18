@@ -106,7 +106,8 @@ return [
                 'access_lifetime'   => 3600 * 24,
             ],
 */
-            'tokenAccessLifetime' => 3600 * 24,
+            'tokenParamName'        => 'access_token',
+            'tokenAccessLifetime'   => 3600 * 24,
             'storageMap' => [
                 'user_credentials'  => 'common\models\User',
             ],
